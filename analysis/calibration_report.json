@@ -1,0 +1,123 @@
+{
+  "generated_from": "experiments/trials_*.json baseline condition, all models, n=5 trials each",
+  "limitation": "This is the SAME baseline data already reported as the legitimate condition in the paper's Evaluation section, not an independently collected held-out calibration set. Thresholds calibrated here are therefore not free of look-ahead relative to what the paper already reports as baseline cost -- a genuinely independent legitimate-task set (new scenarios, or the same scenarios re-run separately) would be the methodologically cleaner version of this step. Documented here rather than glossed over -- see CLAUDE.md S11 (2026-09-14).",
+  "domain_a": {
+    "A1": {
+      "entry": "A1",
+      "n": 30,
+      "n_models": 6,
+      "tool_call_count": {
+        "mean": 3.633333,
+        "std": 0.835996,
+        "min": 3,
+        "max": 5,
+        "threshold_mean_plus_3std": 7,
+        "threshold_max_times_1_5": 8,
+        "recommended_threshold": 8
+      },
+      "dollar_cost_usd": {
+        "mean": 0.023169,
+        "std": 0.02346,
+        "min": 0.000648,
+        "max": 0.074175,
+        "threshold_mean_plus_3std": 0.093549,
+        "threshold_max_times_1_5": 0.111263,
+        "recommended_threshold": 0.111263
+      }
+    },
+    "A2": {
+      "entry": "A2",
+      "n": 30,
+      "n_models": 6,
+      "tool_call_count": {
+        "mean": 2.233333,
+        "std": 0.422953,
+        "min": 2,
+        "max": 3,
+        "threshold_mean_plus_3std": 4,
+        "threshold_max_times_1_5": 5,
+        "recommended_threshold": 5
+      },
+      "dollar_cost_usd": {
+        "mean": 0.013747,
+        "std": 0.012139,
+        "min": 0.000419,
+        "max": 0.041025,
+        "threshold_mean_plus_3std": 0.050164,
+        "threshold_max_times_1_5": 0.061537,
+        "recommended_threshold": 0.061537
+      }
+    },
+    "A3": {
+      "entry": "A3",
+      "n": 30,
+      "n_models": 6,
+      "tool_call_count": {
+        "mean": 2.833333,
+        "std": 0.687184,
+        "min": 1,
+        "max": 5,
+        "threshold_mean_plus_3std": 5,
+        "threshold_max_times_1_5": 8,
+        "recommended_threshold": 8
+      },
+      "dollar_cost_usd": {
+        "mean": 0.019869,
+        "std": 0.015957,
+        "min": 0.000779,
+        "max": 0.054685,
+        "threshold_mean_plus_3std": 0.06774,
+        "threshold_max_times_1_5": 0.082028,
+        "recommended_threshold": 0.082028
+      }
+    }
+  },
+  "domain_b": {
+    "B1": {
+      "entry": "B1",
+      "n": 30,
+      "n_models": 6,
+      "subagent_call_count": {
+        "mean": 3,
+        "std": 0.0,
+        "min": 3,
+        "max": 3,
+        "threshold_mean_plus_3std": 3,
+        "threshold_max_times_1_5": 5,
+        "recommended_threshold": 5
+      },
+      "dollar_cost_usd": {
+        "mean": 0.102928,
+        "std": 0.133798,
+        "min": 0.002251,
+        "max": 0.428855,
+        "threshold_mean_plus_3std": 0.504322,
+        "threshold_max_times_1_5": 0.643282,
+        "recommended_threshold": 0.643282
+      }
+    },
+    "B2": {
+      "entry": "B2",
+      "n": 30,
+      "n_models": 6,
+      "subagent_call_count": {
+        "mean": 1,
+        "std": 0.0,
+        "min": 1,
+        "max": 1,
+        "threshold_mean_plus_3std": 1,
+        "threshold_max_times_1_5": 2,
+        "recommended_threshold": 2
+      },
+      "dollar_cost_usd": {
+        "mean": 0.053407,
+        "std": 0.063471,
+        "min": 0.001006,
+        "max": 0.223905,
+        "threshold_mean_plus_3std": 0.24382,
+        "threshold_max_times_1_5": 0.335857,
+        "recommended_threshold": 0.335857
+      }
+    }
+  }
+}
